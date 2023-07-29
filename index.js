@@ -102,10 +102,7 @@ cardPaymentFormEl.addEventListener('submit', function(e) {
     const paymentFormData = new FormData(cardPaymentFormEl)
     const cardName = paymentFormData.get('card-name')
 
-    console.log(cardName);
-
     modalEl.classList.add('hidden');
     productOrderEl.classList.add('hidden');
     orderSuccessEl.classList.remove('hidden');
-
 })
