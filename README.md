@@ -7,4 +7,4 @@
 ---
 
 ### Try the app with the following link:
-[deployed site](https://electronics-eshop-jan-blaska.netlify.app//)
+[deployed site](https://electronics-eshop-jan-blaska.netlify.app/)
