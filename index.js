@@ -17,10 +17,15 @@ document.addEventListener('click', function(e) {
         if (productOrderEl.classList.contains('hidden')) {
             productOrderEl.classList.remove('hidden');
         }
-        addProductToCart(e.target.dataset.product);
+        if (!productListArray[e.target.dataset.product].isPurchased) {
+            productListArray[e.target.dataset.product].isPurchased = true;
+            addProductToCart(e.target.dataset.product);
+
+        }
     }
     else if (e.target.dataset.removeproduct) {
         removeProductFromCart(e.target.dataset.removeproduct);
+        productListArray[e.target.dataset.removeproduct].isPurchased = false;
     }
 })
 
