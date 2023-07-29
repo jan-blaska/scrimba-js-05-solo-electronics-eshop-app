@@ -1,23 +1,23 @@
-export const menuArray = [
+export const productListArray = [
     {
         name: "Apple iPhone 14 Pro",
-        ingredients: ['256 GB', '6,1" OLED', 'camera 48Mpx'],
+        description: '256 GB, 6,1" OLED, camera 48Mpx',
         id: 0,
         price: 1250,
         emoji: "📱"
     },
     {
         name: "MacBook Pro",
-        ingredients: ['14"', 'RAM 16GB', 'SSD 1000GB'],
+        description: '14", RAM 16GB, SSD 1000GB',
         price: 2750,
         emoji: "💻",
         id: 1
     },
         {
-        name: "Nikon D780",
-        ingredients: ['24,5 Mpx', 'video 4K'],
-        price: 3230,
-        emoji: "📷",
+        name: "Apple Watch Ultra",
+        description: 'OLED, GPS, NFC payments',
+        price: 870,
+        emoji: "⌚️",
         id: 2
     }
 ]

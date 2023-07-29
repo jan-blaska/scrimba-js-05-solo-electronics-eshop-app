@@ -4,21 +4,82 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant ordering app</title>
+        <title>Electronics eshop app</title>
         
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
         <!-- CSS -->
         <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
-        <div class="container">
+        <main>
 
             <header>
-                <h1>Johny´s Grill</h1>
-                <h2>The best burgers and pizzas in town.</h2>
+                <h1>Johny Tech</h1>
+                <h2>Best toys for you</h2>
             </header>
+            
+            <section class="product-list" id="product-list">
 
-        </div>
+            </section>
+
+            
+            <section class="product-order" id="product-order">
+                <!--
+                <h3 class="product-order-header">Your order</h3>
+                <div class="product-order-item">
+                    <h3 class="product-order-name">Laptop</h3>
+                    <button class="product-order-remove">remove</button>
+                    <h4 class="product-order-price">1250eur</h4>
+                </div>
+                <div class="product-order-item">
+                    <h3 class="product-order-name">Laptop</h3>
+                    <button class="product-order-remove">remove</button>
+                    <h4 class="product-order-price">1250eur</h4>
+                </div>
+                <div class="product-order-item">
+                    <h3 class="product-order-name">Laptop</h3>
+                    <button class="product-order-remove">remove</button>
+                    <h4 class="product-order-price">1250eur</h4>
+                </div>
+                <div class="product-order-sum">
+                    <h3>Total price:</h3>
+                    <h4 class="product-order-price">2500eur</h4>
+                </div>
+                <button class="btn-complete-order">Complete order</button>
+                -->
+            </section>
+            
+
+            <section class="order-success hidden" id="order-success">
+                
+                <p class="order-success-text">Thank you <span>for your purchase!</span></p>
+                
+            </section>
+            
+
+            <div class="modal hidden" id="modal">
+                
+                <p class="modal-header">Enter card details</p>
+                <form id="card-payment-form">
+                    <input type="text" name="card-name" id="card-name" placeholder="Enter your name" required/>
+                    <input type="text" name="card-number" id="card-number" placeholder="Enter card number" required/>
+                    <input type="text" name="card-cvv" id="card-cvv" placeholder="Enter CVV" required/>
+                    <button class="btn-card-playment">Pay</button>
+                </form>
+
+            </div>
+
+
+
+        </main>
 
         <script src="index.js" type="module"></script>
     </body>

@@ -1,22 +1,206 @@
+/* Reset, Main setting */
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
+    font-family: 'Gugi', cursive;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* Typography */
 
 h1, h2 {
+    font-family: 'Gugi', cursive;
     padding: 0;
     margin: 0;
+    color:  #92fc4b;
+    text-shadow: 1px 1px 2px black;
 }
 
-.container {
+h1 {
+    font-size: 60px;
+}
+
+/* Layout */
+
+main {
     width: 600px;
     margin: 0 auto;
     background-color: #fff;
+    height: 100%;
+    padding-bottom: 40px;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    padding: 40px 30px;  
+    padding: 40px 30px; 
+    background-image: url("images/header-cover-photo-2.jpg"); 
+    background-size: cover;
+    background-position: center;
 }
+
+.hidden {
+    display: none;
+}
+
+/* Product List */
+
+.product-list {
+    padding: 0px 50px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid grey;
+}
+
+.product-image {
+    margin: 0;
+    padding: 0;
+    font-size: 120px;
+}
+
+.btn-add-product {
+    margin-left: auto;
+    padding: 10px 15px;
+    border: 1px solid #d34bfc;
+    border-radius: 50%; 
+    background-color: white;
+    font-size: 20px;
+    color: #d34bfc;
+}
+
+.btn-add-product:hover,
+.btn-add-product:focus {
+    cursor: pointer;
+}
+
+/* Product Order */
+
+.product-order {
+    padding: 0px 50px;
+}
+
+.product-order-header {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.product-order-item,
+.product-order-sum {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-order-sum {
+    border-top: 2px solid black;
+}
+
+.product-order-name,
+.product-order-price,
+.product-order-remove {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.product-order-price {
+    margin-left: auto;
+}
+
+.product-order-remove {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    color: #d34bfc;
+}
+
+.btn-complete-order {
+    display: block;
+    width: 100%;
+    background-color: #d34bfc;
+    color: #fff;
+    padding: 15px 0px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+
+    
+}
+
+/* Order success */
+.order-success {
+    padding: 0px 50px;
+}
+
+.order-success-text {
+    background-color: #529724;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.5em;
+
+}
+
+.order-success-text span {
+    display: inline-block;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 30px;
+    height: 500px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px 50px #666;
+}
+
+.modal-header {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+}
+
+input{
+    font-size: 20px;
+    margin-top: 20px; 
+    border: 1px solid #212529;
+    padding: 15px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.btn-card-playment {
+    display: block;
+    width: 100%;
+    background-color: #d34bfc;
+    color: #fff;
+    padding: 15px 0px;
+    margin-top: 50px; 
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
